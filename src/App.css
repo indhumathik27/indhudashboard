@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f0ff;
+}
+
+nav {
+  background: #483e58;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+.home-container,
+.about-container,
+.contact-container {
+  padding: 35px;
+  text-align: center;
+}
+
+.welcome h1,
+.about-container h1,
+.contact-container h1 {
+  color: #5b21b6;
+}
+
+.welcome p {
+  color: #5a1c1c;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.student-card,
+.about-card,
+.contact-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(76, 29, 149, 0.12);
+  text-align: left;
+}
+
+.student-card {
+  border-top: 5px solid #7c3aed;
+}
+
+.student-card h2 {
+  color: #6d28d9;
+  font-size: 21px;
+}
+
+.student-card p {
+  color: #121010;
+  line-height: 1.8;
+}
+
+.about-card,
+.contact-card {
+  max-width: 650px;
+  margin: 30px auto;
+  line-height: 1.8;
+}
+
+.about-card h2,
+.about-card h3,
+.contact-card h2 {
+  color: #cbc0dc;
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 20px;
+  }
+}
+.contact {
+  max-width: 450px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  height: 120px;
+}
+
+.contact button {
+  padding: 12px;
+  background: #e75480;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
